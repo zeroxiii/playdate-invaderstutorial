@@ -1,6 +1,7 @@
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
+-- luacheck: globals Enemy
 class('Enemy').extends(gfx.sprite)
 
 function Enemy:init(x, y, moveSpeed)
