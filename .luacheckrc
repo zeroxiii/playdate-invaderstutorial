@@ -1,4 +1,5 @@
 std = "lua54+playdate"
+operators = {"+=", "-=", "*=", "/="}
 globals = {
     "playdate",
     "game"
