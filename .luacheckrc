@@ -7,3 +7,7 @@ globals = {
 read_globals = {
     "import"
 }
+ignore = {
+    "112",
+    "113"
+}

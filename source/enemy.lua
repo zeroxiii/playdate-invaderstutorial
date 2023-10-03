@@ -1,7 +1,6 @@
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
--- luacheck: globals Enemy
 class('Enemy').extends(gfx.sprite)
 
 function Enemy:init(x, y, moveSpeed)
@@ -17,7 +16,7 @@ end
 
 function Enemy:update()
 	self:moveBy(-self.moveSpeed, 0)
-if self.x < 0 then
+	if self.x < 0 then
 		resetGame()
 	end
 end

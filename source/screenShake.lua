@@ -1,7 +1,6 @@
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
--- luacheck: globals ScreenShake
 class('ScreenShake').extends(gfx.sprite)
 
 function ScreenShake:init()
