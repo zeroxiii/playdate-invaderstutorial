@@ -3,6 +3,7 @@ import "bullet"
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
+-- luacheck: globals Player
 class('Player').extends(gfx.sprite)
 
 function Player:init(x,y)
