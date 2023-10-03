@@ -29,3 +29,12 @@ function stopSpawner()
 		spawnTimer:remove()
 	end
 end
+
+function clearEnemies()
+	local allSprites = gfx.sprite.getAllSprites()
+	for index, sprite in ipairs(allSprites) do
+		if sprite:isa(Enemy) then
+			sprite:remove()
+		end
+	end
+end
